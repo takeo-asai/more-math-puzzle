@@ -1,13 +1,13 @@
-package q1_test
+package q0_test
 
 import (
 	"testing"
 
-	"github.com/takeo-asai/more-math-puzzle/puzzles/q1"
+	"github.com/takeo-asai/more-math-puzzle/puzzles/q0"
 )
 
 func Test_memo(t *testing.T) {
-	m := q1.NewMemo()
+	m := q0.NewMemo()
 	m.Set(0, 0, 100)
 	if v, _ := m.Get(0, 0); v != 100 {
 		t.Errorf("%d must be 100", v)
